@@ -1,0 +1,5 @@
+.vercel
+.tanstack
+.output
+.nitro
+node_modules
