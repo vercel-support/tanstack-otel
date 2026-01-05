@@ -12,7 +12,11 @@ const config = defineConfig({
       projects: ["./tsconfig.json"],
     }),
     tailwindcss(),
-    tanstackStart(),
+    tanstackStart({
+      server: {
+        entry: './instrumentation.ts',
+      },
+    }),
     nitro(),
     viteReact(),
   ],
