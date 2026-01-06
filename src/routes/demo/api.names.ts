@@ -3,7 +3,7 @@ import { json } from '@tanstack/react-start'
 import { trace, SpanStatusCode } from '@opentelemetry/api'
 
 const tracer = trace.getTracer('otel-demo-app')
-
+console.log('Tracer initialized:', tracer)
 export const Route = createFileRoute('/demo/api/names')({
   server: {
     handlers: {
